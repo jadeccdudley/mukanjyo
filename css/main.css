@@ -254,7 +254,10 @@ textarea {
     orphans: 3;
     widows: 3;
   }
-
+.jap-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: large;
+}
   h2,
   h3 {
     page-break-after: avoid;
