@@ -254,13 +254,38 @@ textarea {
     orphans: 3;
     widows: 3;
   }
-.jap-text {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: large;
-}
+
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-
+.jap-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: crimson;
+  text-shadow: rgb(49, 48, 128);
+  font-size: 50px;
+  text-align: right;
+  text-align: center;
+}
+.eng-text {
+font-family: 'Raleway', sans-serif;
+color: ghostwhite;
+font-size: 60px;
+text-align: right;
+text-align: center;
+}
+.emphasis {
+  background: linear-gradient(
+    to right, 
+    rgb(255, 5, 5), 
+    rgb(231, 197, 102)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center; 
+  font-size:80px;
+  text-shadow: ghostwhite;
+}
+body {background-color: rgb(40, 45, 71);
+}
