@@ -287,5 +287,7 @@ text-align: center;
   font-size:80px;
   text-shadow: ghostwhite;
 }
-body {background-color: rgb(40, 45, 71);
+body {
+  background-color: #141E30;
+  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
 }
