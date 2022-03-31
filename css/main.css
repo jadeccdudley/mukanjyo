@@ -262,30 +262,52 @@ textarea {
 }
 .jap-text {
   font-family: 'Noto Sans JP', sans-serif;
-  color: crimson;
-  text-shadow: rgb(49, 48, 128);
-  font-size: 50px;
+  background: radial-gradient(circle, #f82626 0%, #fcbb7f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: animatedGradient 2s infinite ease;
+  animation-direction: alternate;
+  font-size: 40px;
   text-align: right;
   text-align: center;
+}
+@keyframes animatedGradient {
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 250%;
+  }
 }
 .eng-text {
 font-family: 'Raleway', sans-serif;
 color: ghostwhite;
-font-size: 60px;
+font-size: 40px;
 text-align: right;
 text-align: center;
 }
 .emphasis {
-  background: linear-gradient(
-    to right, 
-    rgb(255, 5, 5), 
-    rgb(231, 197, 102)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center; 
-  font-size:80px;
-  text-shadow: ghostwhite;
+  border: none;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: #ff3e24;
+  letter-spacing: .4rem;
+  border-radius: auto;
+  padding-right: 5px;
+  position: relative;
+  box-sizing: auto;
+  transition: all 200ms ease; 
+  font-size:40px;
+  text-align: right;
+  text-align: center;
+}
+.emphasis:hover{
+  color: white;
+  border: transparent;
+  background-image: url(../img/heart.png);
+  background-size: cover;
 }
 body {
   background-color: #141E30;
