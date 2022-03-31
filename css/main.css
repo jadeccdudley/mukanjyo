@@ -328,7 +328,28 @@ position: relative;
   text-align: center;
 }
 .emphasis:hover{
-  color: white;
+  color: rgb(17, 8, 151);
+  border: transparent;
+  background-image: url(../img/heart.png);
+  background-size: cover;
+}
+.emphasis-2{
+  border: none;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: hsl(22, 77%, 62%);
+  letter-spacing: .4rem;
+  border-radius: auto;
+  padding-right: 5px;
+  position: relative;
+  box-sizing: auto;
+  transition: all 200ms ease; 
+  font-size:40px;
+  text-align: right;
+  text-align: center;
+}
+.emphasis-2:hover{
+  color: rgb(255, 0, 0);
   border: transparent;
   background-image: url(../img/heart.png);
   background-size: cover;
