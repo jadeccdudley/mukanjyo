@@ -262,7 +262,7 @@ textarea {
 }
 .jap-text {
   font-family: 'Noto Sans JP', sans-serif;
-  background: radial-gradient(circle, #f82626 0%, #fcbb7f 100%);
+  background: radial-gradient(circle, #f82626 0%, #4b80bd 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -287,6 +287,30 @@ color: ghostwhite;
 font-size: 40px;
 text-align: right;
 text-align: center;
+position: relative;
+}
+.eng-text::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.eng-text:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.eng-text::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(64, 75, 121);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
 }
 .emphasis {
   border: none;
@@ -311,5 +335,5 @@ text-align: center;
 }
 body {
   background-color: #141E30;
-  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  background: linear-gradient(to right, #2b2b47, #243658, #0b0729);
 }
